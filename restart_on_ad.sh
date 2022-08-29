@@ -19,8 +19,8 @@ function ad_playing {
 			string:"$SP_MEMB" string:'Metadata'
 	)
 	# msg=$(head "$metadata")
-	# echo "in ad playing, metadata: $msg"
-	echo $metadata | grep "/com/spotify/ad"
+	# echo "in ad playing, metadata: $metadata"
+	(echo $metadata | grep "/com/spotify/ad") || (echo $metadata | grep "spotify:ad")
 }
 
 function resume_playing {
@@ -79,5 +79,5 @@ do
 		resume_playing
 		exit
 	fi
-	sleep 0.5
+	sleep 3
 done

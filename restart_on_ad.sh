@@ -79,5 +79,5 @@ do
 		resume_playing
 		exit
 	fi
-	sleep 3
+	sleep 0.5
 done

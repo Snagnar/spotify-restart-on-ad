@@ -10,7 +10,7 @@ fi
 SPOTIFY_INSTALL_PATH=/usr/share/spotify/
 
 echo "INSTALL XDOTOOL..."
-# apt update && apt install xdotool
+apt update && apt install xdotool
 
 echo "MAKE SCRIPTS EXECUTABLE ..."
 chmod a+x restart_on_ad.sh spotify_ad_mute.sh
